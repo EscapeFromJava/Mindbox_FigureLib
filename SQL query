@@ -1,0 +1,4 @@
+SELECT Product.name as 'Product', Category.name as 'Category' 
+FROM Product 
+LEFT JOIN Category ON Product.id_category = Category.id
+ORDER BY Product.name
